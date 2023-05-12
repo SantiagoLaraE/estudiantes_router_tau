@@ -1,7 +1,7 @@
-import React from "react";
-import { Table } from "react-bootstrap";
+import React from 'react'
+import { Table } from 'react-bootstrap'
 
-function ListaEstudiantes({ estudiantes }) {
+function ListaEstudiantes ({ estudiantes }) {
   return (
     <Table striped bordered hover responsive>
       <thead>
@@ -31,7 +31,7 @@ function ListaEstudiantes({ estudiantes }) {
         ))}
       </tbody>
     </Table>
-  );
+  )
 }
 
-export default ListaEstudiantes;
+export default ListaEstudiantes

@@ -1,21 +1,21 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-  lang: "es",
-  theme: "light",
-};
+  lang: 'es',
+  theme: 'light'
+}
 
 const settingsSlice = createSlice({
-  name: "settings",
+  name: 'settings',
   initialState,
   reducers: {
-    setLang(state, action) {
-      state.lang = action.payload;
+    setLang (state, action) {
+      state.lang = action.payload
     },
-    setTheme(state, action) {
-      state.theme = action.payload;
-    },
-  },
-});
-export const { setLang, setTheme } = settingsSlice.actions;
-export default settingsSlice.reducer;
+    setTheme (state, action) {
+      state.theme = action.payload
+    }
+  }
+})
+export const { setLang, setTheme } = settingsSlice.actions
+export default settingsSlice.reducer
